@@ -1,44 +1,36 @@
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
+
+  {{#slick-carousel
+    class="ember-carousel"
+    autoplay=true
+    autoplaySpeed=5000
+    arrows=true
+    dots=true
+    fade=true}}
+    <div>
       <img src="img/lake.jpg">
       <div class="carousel-caption">
         <h3>About</h3>
         <p>Lakeview Speech and Language Clinic offers in-home therapy to children and their families in Oak Park, IL and Chicago, IL.</p>
       </div>
     </div>
-    <div class="item">
+    <div>
       <img src="img/street.jpg">
       <div class="carousel-caption">
-        Yesh
+        <h3>Mission</h3>
+        <p>Our mission is to connect with your child and family to promote and teach skills in order to enrich your lives in all environments. Our therapy sessions are energized and motivational, and use naturalistic materials and activities.</p>
       </div>
     </div>
-    <div class="item">
+    <div>
       <img src="img/park.jpg">
       <div class="carousel-caption">
-        Yesh
+        <h3>Services</h3>
+        <p>We specialize in providing pediatric speech-language and occupational evaluations and therapies. {{#link-to 'services'}}Learn more about our services{{/link-to}}</p>
       </div>
     </div>
-  </div>
+  {{/slick-carousel}}
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+
 
 <div class="bs-callout bs-callout-green">
   <div class="media">
