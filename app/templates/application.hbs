@@ -2,6 +2,9 @@
   <div class="header clearfix">
 
     <ul class="list-inline">
+      <li class="pull-left">
+        <img class="logo" src="img/logo.png">
+      </li>
       <li class="pull-right">
 
         <ul class="list-inline right-nav hidden-xs">
@@ -13,36 +16,42 @@
           </li>
           <li>
             <ul class="list-inline">
-              <li><i class="fa fa-yelp fa-3x"></i></li>
-              <li><i class="fa fa-facebook-square fa-3x"></i></li>
-              <li><i class="fa fa-pinterest-square fa-3x"></i></li>
+              <li>
+                <a href="{{ENV.APP.yelpLink}}" target="_blank">
+                  <i class="fa fa-yelp fa-3x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="{{ENV.APP.facebookLink}}" target="_blank">
+                  <i class="fa fa-facebook-square fa-3x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="{{ENV.APP.pinterestLink}}" target="_blank">
+                  <i class="fa fa-pinterest-square fa-3x"></i>
+                </a>
+              </li>
             </ul>
           </li>
         </ul>
-        <!-- <ul class="nav nav-pills pull-right">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="#">About</a></li>
-          <li role="presentation"><a href="#">Contact</a></li>
-        </ul> -->
-      </li>
-      <li class="pull-left">
-        <img class="logo" src="img/logo.png">
       </li>
     </ul>
   </div>
 
   <nav class="navbar navbar-inverse">
-    <ul class="nav navbar-nav">
-      <li>{{#link-to 'home'}}Home{{/link-to}}</li>
-      <li>{{#link-to 'services'}}Services{{/link-to}}</li>
-      <li>{{#link-to 'new-clients'}}New Clients{{/link-to}}</li>
-      <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
-    </ul>
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li>{{#link-to 'home'}}Home{{/link-to}}</li>
+        <li>{{#link-to 'services'}}Services{{/link-to}}</li>
+        <li>{{#link-to 'new-clients'}}New Clients{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+      </ul>
+    </div>
   </nav>
   {{outlet}}
 
-  <footer class="footer">
-    <p>&copy; 2015 Lakeview Speech and Language Clinic, LLC</p>
-  </footer>
-
 </div> <!-- /container -->
+
+<footer class="footer">
+  <p>&copy; {{currentYear}} Lakeview Speech and Language Clinic, LLC</p>
+</footer>

@@ -14,6 +14,9 @@ module.exports = function(environment) {
     },
 
     APP: {
+      facebookLink: "http://facebook.com/lakeviewspeechclinic",
+      yelpLink: "http://www.yelp.com/biz/lakeview-speech-and-language-clinic-chicago",
+      pinterestLink: "https://www.pinterest.com/lakeviewspeech/"
       // Here you can pass flags/options to your application instance
       // when it is created
     }
@@ -28,6 +31,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'test') {
+
     // Testem prefers this...
     ENV.baseURL = '/';
     ENV.locationType = 'none';
@@ -40,8 +44,22 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.liveReload = false;
   }
+
+  ENV.contentSecurityPolicy = {
+    'default-src': "*",
+    'script-src': "'self' liveReloadPort 'unsafe-eval' *.olark.com 'unsafe-inline' *.googleapis.com",
+    'font-src': "'self' data: use.typekit.net fonts.gstatic.com",
+    'connect-src': "'self' liveReloadPort *.olark.com lakeviewspeech.com",
+    'img-src': "'self' *.olark.com app.getsentry.com csi.gstatic.com *.gstatic.com data: *.googleapis.com",
+    'style-src': "'self' 'unsafe-inline' *.olark.com use.typekit.net *.googleapis.com",
+    'media-src': "'self' *.olark.com",
+    'report-uri': "http://localhost:4200"
+  };
+
+
+
 
   return ENV;
 };
