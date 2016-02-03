@@ -1,10 +1,3 @@
-{{#g-map lat=41.924528 lng=-87.707119 zoom=12 as |context|}}
-  {{g-map-marker context lat=41.934756 lng=-87.643860 html='Chicago, IL'}}
-  {{g-map-marker context lat=41.900766 lng=-87.783487}}
-{{/g-map}}
-
-<br>
-
 <div class="row">
   <div class="col-xs-12 col-md-7">
     <div class="bs-callout bs-callout-green">
@@ -74,3 +67,18 @@
     </div>
   </div>
 </div>
+
+<br>
+
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <div class="bs-callout bs-callout-green">
+      <h3>Locations</h3>
+      {{#g-map lat=41.924528 lng=-87.707119 zoom=12 scrollwheel=false options=options as |context|}}
+        {{g-map-marker context lat=41.934756 lng=-87.643860 html='Chicago, IL'}}
+        {{g-map-marker context lat=41.900766 lng=-87.783487}}
+      {{/g-map}}
+    </div>
+  </div>
+</div>
+<br>
