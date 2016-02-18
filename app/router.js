@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('new-clients');
   this.route('contact');
   this.route('team');
+  this.route('testimonials');
 });
 
 export default Router;
