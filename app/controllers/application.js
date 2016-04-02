@@ -6,5 +6,14 @@ export default Ember.Controller.extend({
   currentYear: function(){
     var d = new Date();
     return d.getFullYear();
-  }.property()
+  }.property(),
+  actions: {
+    toggleMobileNav: function(){
+      if (this.get("mobileNavClass") === "in"){
+        this.set("mobileNavClass", "");
+      } else{
+        this.set("mobileNavClass", "in");
+      }
+    }
+  }
 });
