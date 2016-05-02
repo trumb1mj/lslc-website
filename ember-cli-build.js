@@ -6,6 +6,12 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  // app.options.minifyCSS.enabled = false;
+  // app.options.minifyJS.enabled = false;
+  // app.options.sourcemaps.enabled = false;
+
+  app.import('bower_components/es6-shim/es6-shim.js');
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
