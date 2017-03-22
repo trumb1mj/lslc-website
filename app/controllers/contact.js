@@ -1,7 +1,0 @@
-import Ember from 'ember';
-import ENV from '../config/environment';
-
-export default Ember.Controller.extend({
-  ENV: ENV,
-  options: {scrollwheel: false}
-});
