@@ -118,7 +118,7 @@ body {
   width: auto;
   top: 20%;
   padding: 0 20px 15px 20px;
-  bottom: inherit;
+  bottom: auto!important;
   display: block;
   background-color: #222;
   background: rgba(0, 0, 0, 0.7);
@@ -153,6 +153,11 @@ body {
 }
 
 
+.accordion-body .panel-collapse {
+  background: #fff url(../img/callout-bg.png);
+  font-size: 16px !important;
+}
+
 .bs-callout {
   font-size: 16px !important;
   padding: 20px;
@@ -186,9 +191,7 @@ body {
 
 .bs-callout-green {
   border-left-color: @green;
-  h4{
-      color: @green;
-  }
+
   span.badge{
     background-color: @green;
   }
@@ -260,3 +263,5 @@ body {
   opacity: 1;
   background-color: white;
 }
+
+@import "ember-bootstrap/bootstrap";
