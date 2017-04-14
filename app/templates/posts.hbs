@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-xs-12 col-md-8">
+    <div class="bs-callout bs-callout-green">
+      <ul class="list-inline">
+        <li>
+          <h3>{{activePost.title}} <small> by {{activePost.author}}</small></h3>
+        </li>
+        <li>
+          {{activePost.body}} asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as  asdasd asd asd asd as
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-4">
+    <div class="bs-callout bs-callout-green">
+      <h3>Other posts</h3>
+      <ul class="list-unstyled">
+        {{#each otherPosts as |post|}}
+        <li><a href="#/posts?id={{post.id}}">{{post.title}}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

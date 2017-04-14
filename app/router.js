@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('team');
   this.route('testimonials');
   this.route('faq');
+  this.route('posts');
 });
 
 export default Router;

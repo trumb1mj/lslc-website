@@ -45,6 +45,9 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.liveReload = false;
+    ENV['ember-cli-mirage'] = {
+      enabled: true
+    }    
   }
 
   ENV.contentSecurityPolicy = {
