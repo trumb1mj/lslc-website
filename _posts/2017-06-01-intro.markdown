@@ -10,8 +10,9 @@ Many people I meet have memories of seeing a Speech-Language Pathologist as a ch
 
 Speech-Language Pathologists hold a Master&#39;s degree in Communication Sciences &amp; Disorders. In graduate school, we study the diagnosis and treatment of a variety of communication disorders across the lifespan.
 
-Here is a nice visual created by [Big Sky Therapy Associates](http://www.bigskytherapyassociates.com/) that describes an SLP&#39;s scope of practice:
+Here is a nice visual created by Big Sky Therapy Associates that describes an SLP&#39;s scope of practice:
 
+![alt text](https://github.com/trumb1mj/lslc-website/blob/gh-pages/_includes/resource1_post1.png)
 
 **What do Speech-Language Pathologists do?**
 
