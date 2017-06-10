@@ -12,7 +12,6 @@ Speech-Language Pathologists hold a Master&#39;s degree in Communication Science
 
 Here is a nice visual created by [Big Sky Therapy Associates](http://www.bigskytherapyassociates.com/) that describes an SLP&#39;s scope of practice:
 
-![alt text](https://github.com/trumb1mj/lslc-website/blob/gh-pages/_includes/resource1_post1.png)
 
 **What do Speech-Language Pathologists do?**
 
