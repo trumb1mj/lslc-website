@@ -4,12 +4,104 @@ title: Contact
 permalink: /contact/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<div class="row">
+  <div class="col-xs-12 col-md-7">
+    <div class="bs-callout bs-callout-green">
+      <h3>Contact Form</h3>
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+      <form method="POST" action="http://formspree.io/michael@trumbell.net">
+        <div class="form-group">
+          <input placeholder="Name" type="text" name="name" class="form-control ember-view ember-text-field">
+        </div>
+        <div class="form-group">
+          <input placeholder="Child's Name and Age" type="text" name="childsname" class="form-control ember-view ember-text-field">
+        </div>
+        <div class="form-group">
+          <input placeholder="Email" type="text" name="email" class="form-control ember-view ember-text-field">
+        </div>
+        <div class="form-group">
+          <input placeholder="Phone" type="text" name="phone" class="form-control ember-view ember-text-field">
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Message" name="message" class="form-control ember-view ember-text-area"></textarea>
+        </div>
+        <!-- <input type="hidden" name="_next" value="http://localhost:4000/contact/" /> -->
+        <input type="hidden" name="_subject" value="New client inquiry!" />
+        <ul class="list-inline">
+          <li class="pull-right">
+            <button type="submit" class="btn btn-default btn-lg">Submit</button>
+          </li>
+          <li class="pull-left"></li>
+        </ul>
+        <br>
+        <br>
+      </form>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-5">
+    <div class="bs-callout bs-callout-green">
+      <h3>Follow</h3>
+      <ul class="list-inline">
+        <li>
+          <a target="_blank" href="http://www.yelp.com/biz/lakeview-speech-and-language-clinic-chicago">
+            <i class="fa fa-yelp fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://facebook.com/lakeviewspeechclinic">
+            <i class="fa fa-facebook-square fa-2x"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.pinterest.com/lakeviewspeech/">
+            <i class="fa fa-pinterest-square fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="bs-callout bs-callout-green">
+      <h3>Email</h3>
+      <p><i class="fa fa-envelope"></i> info@lakeviewspeech.com</p>
+    </div>
+    <div class="bs-callout bs-callout-green">
+      <h3>Phone</h3>
+      <p><i class="fa fa-phone"></i> (773) 573-7709</p>
+    </div>
+  </div>
+</div>
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+<br>
+
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <div class="bs-callout bs-callout-green">
+      <h3>Locations</h3>
+
+      <div id="map" class="ember-view g-map" style="height: 400px;"></div>
+      <script>
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            scrollwheel: false,
+            zoom: 12,
+            center: {lat: 41.924528, lng: -87.707119}
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 41.934756, lng: -87.643860},
+            map: map,
+            title: 'Chicago'
+          });
+
+          var marker = new google.maps.Marker({
+            position: {lat: 41.900766, lng: -87.783487},
+            map: map,
+            title: 'Oak Park'
+          });
+
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJsUMd0fmYgECT4cYRWTJ69tWlHIAYoNc&callback=initMap"></script>
+
+    </div>
+  </div>
+</div>

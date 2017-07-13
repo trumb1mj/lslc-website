@@ -115,7 +115,7 @@ body {
   }
 }
 .accordion-body .panel-collapse {
-  background: #fff url(../img/callout-bg.png);
+  background: #fff url(callout-bg.png);
   font-size: 16px !important;
 }
 .bs-callout {
@@ -128,7 +128,7 @@ body {
   border-bottom: none;
   border-right: 0;
   text-align: justify;
-  background: #fff url(../img/callout-bg.png);
+  background: #fff url(callout-bg.png);
 }
 .bs-callout h3 {
   margin-top: 0;
