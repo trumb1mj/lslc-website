@@ -1,0 +1,209 @@
+/* Space out content a bit */
+@font-face {
+  font-family: 'Nexa-light';
+  src: url('../fonts/Nexa-Light.otf');
+}
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url(../img/bg-repeat.jpg);
+  font-family: Nexa-light, sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+/* some colors*/
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+.navbar .nav > li > a {
+  color: #cfcfcf;
+  font-size: 16px;
+}
+.logo {
+  width: 340px;
+  margin: 20px 0;
+}
+.right-nav {
+  margin-right: -15px;
+  margin-top: 40px;
+}
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  text-align: center;
+}
+.media-heading {
+  color: black!important;
+  font-weight: 500!important;
+  font-size: 18px;
+}
+.media-left {
+  padding-right: 20px;
+}
+.container {
+  background: #fff;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 971px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+.navbar {
+  border-radius: 0;
+}
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+.swiper-slide {
+  width: 100%;
+}
+.carousel-caption {
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: auto;
+  top: 20%;
+  padding: 0 20px 15px 20px;
+  bottom: inherit;
+  display: block;
+  background-color: #222;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: justify;
+}
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+.bs-callout {
+  font-size: 16px !important;
+  padding: 20px;
+  margin: 10px 0 10px 0;
+  border: 1px solid #DDDDDD;
+  border-left-width: 5px;
+  border-top: none;
+  border-bottom: none;
+  border-right: 0;
+  text-align: justify;
+  background: #fff url(../img/callout-bg.png);
+}
+.bs-callout h3 {
+  margin-top: 0;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout-blue {
+  border-left-color: #428bca;
+}
+.bs-callout-blue h4 {
+  color: #428bca;
+}
+.bs-callout-blue span.badge {
+  background-color: #428bca;
+}
+.bs-callout-green {
+  border-left-color: #89C235;
+}
+.bs-callout-green h4 {
+  color: #89C235;
+}
+.bs-callout-green span.badge {
+  background-color: #89C235;
+}
+.bs-callout-yellow {
+  border-left-color: #EBEB00;
+}
+.bs-callout-yellow h4 {
+  color: #EBEB00;
+}
+.bs-callout-yellow span.badge {
+  background-color: #EBEB00;
+}
+.bs-callout-orange {
+  border-left-color: #aa6708;
+}
+.bs-callout-orange h4 {
+  color: #aa6708;
+}
+.bs-callout-orange span.badge {
+  background-color: #aa6708;
+}
+.bs-callout-red {
+  border-left-color: #ce4844;
+}
+.bs-callout-red h4 {
+  color: #ce4844;
+}
+.bs-callout-red span.badge {
+  background-color: #ce4844;
+}
+.bs-callout-brick {
+  border-left-color: #8C001A;
+}
+.bs-callout-brick h4 {
+  color: #8C001A;
+}
+.bs-callout-brick span.badge {
+  background-color: #8C001A;
+}
+.fa-yelp {
+  color: #c41200;
+}
+.fa-facebook-square {
+  color: #3a5795;
+}
+.fa-pinterest-square {
+  color: #ab171e;
+}
+.g-map-canvas {
+  width: 100%;
+  height: 400px;
+}
+.swiper-pagination-bullet {
+  opacity: 0.7;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: white;
+}
+/*# sourceMappingURL=/assets/lslc-website.css.map */
