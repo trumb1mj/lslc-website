@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% assign post = site.posts.first %}
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+
+<div class="row">
+  <div class="col-xs-12 col-md-8">
+    <div class="bs-callout bs-callout-green">
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">{{ post.title | escape }}</h2>
+        <p class="post-meta">
+          <span class="" style="font-style: italic; font-size: 15px; color: gray;">Posted on {{ post.date | date: date_format }} by <a href="{{site.github.url}}/ourteam" class="ember-view active">{{ post.originalAuthor }}</a></span>
+        </p>
+      </header>
+
+      <br><br>
+
+      {{ post.content }}
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-4">
+    <div class="bs-callout bs-callout-green">
+
+      <h3>Older Posts</h3>
+      <ul class="list-unstyled">
+        {% for olderPost in site.posts limit:10 offset:1 %}
+        <li>
+          <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
+          <a class="post-link" href="{{ olderPost.url | relative_url }}"><h5>{{ olderPost.title | escape }}</h5></a> <span class="" style="font-style: italic; font-size: 15px; color: gray;">{{ post.date | date: date_format }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{{ content }}
+
+<br>
+
+<!-- <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->

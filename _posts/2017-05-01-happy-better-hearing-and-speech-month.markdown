@@ -3,15 +3,13 @@ layout: post
 title:  "Happy Better Hearing and Speech Month!"
 date:   2017-05-01 12:23:17 -0500
 categories: speech hearing language autism
+originalAuthor: Erica Seifert
+navType: blog
 ---
-
-**Happy Better Hearing and Speech Month!**
 
 Welcome to our shiny new blog! What a better time to launch this
 resource than during May - a month dedicated to raising awareness of
 what we do and who we help as Speech-Language Pathologists.
-
-<img src="media/image1.jpeg" width="576" height="200" />
 
 **What is a Speech-Language Pathologist (SLP)?**
 
@@ -33,9 +31,7 @@ Here is a nice visual created by [Big Sky Therapy
 Associates](http://www.bigskytherapyassociates.com/) that describes an
 SLP's scope of practice:
 
-<img src="media/image2.png" width="576" height="745" />
-
-https://s-media-cache-ak0.pinimg.com/originals/01/a5/34/01a5345f8be97298cf252dcdae4872cd.png
+<img src="https://s-media-cache-ak0.pinimg.com/originals/01/a5/34/01a5345f8be97298cf252dcdae4872cd.png" width="100%" />
 
 **What do Speech-Language Pathologists do?**
 
