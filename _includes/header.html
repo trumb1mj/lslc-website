@@ -49,15 +49,17 @@
       </button>
     </div>
     <div id="navbar" class="navbar-collapse collapse ">
+
+
       <ul class="nav navbar-nav" data-ember-action="388">
-        <li><a href="{{site.github.url}}/" class="ember-view active">Home</a></li>
-        <li><a href="{{site.github.url}}/ourteam" class="ember-view">Our Team</a></li>
-        <li><a href="{{site.github.url}}/services" class="ember-view">Services</a></li>
-        <li><a href="{{site.github.url}}/newclients" class="ember-view">New Clients</a></li>
-        <li><a href="{{site.github.url}}/testimonials" class="ember-view">Testimonials</a></li>
-        <li><a href="{{site.github.url}}/faq" class="ember-view">FAQ</a></li>
-        <li><a href="{{site.github.url}}/blog" class="ember-view">Blog</a></li>
-        <li><a href="{{site.github.url}}/contact" class="ember-view">Contact</a></li>
+        <li class="{% if page.title == "Home" %}active {% endif %}"><a href="{{site.github.url}}/" class="ember-view active">Home</a></li>
+        <li class="{% if page.title == "Our Team" %}active {% endif %}"><a href="{{site.github.url}}/ourteam" class="ember-view">Our Team</a></li>
+        <li class="{% if page.title == "Services" %}active {% endif %}"><a href="{{site.github.url}}/services" class="ember-view">Services</a></li>
+        <li class="{% if page.title == "New Clients" %}active {% endif %}"><a href="{{site.github.url}}/newclients" class="ember-view">New Clients</a></li>
+        <li class="{% if page.title == "Testimonials" %}active {% endif %}"><a href="{{site.github.url}}/testimonials" class="ember-view">Testimonials</a></li>
+        <li class="{% if page.title == "FAQ" %}active {% endif %}"><a href="{{site.github.url}}/faq" class="ember-view">FAQ</a></li>
+        <li class="{% if page.title == "Blog" %}active {% endif %}"><a href="{{site.github.url}}/blog" class="ember-view">Blog</a></li>
+        <li class="{% if page.title == "Contact" %}active {% endif %}"><a href="{{site.github.url}}/contact" class="ember-view">Contact</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container-fluid -->
