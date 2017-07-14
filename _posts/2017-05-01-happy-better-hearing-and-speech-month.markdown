@@ -3,7 +3,7 @@ layout: post
 title:  "Happy Better Hearing and Speech Month!"
 date:   2017-05-01 12:23:17 -0500
 categories: speech hearing language autism
-originalAuthor: Erica Seifert
+originalAuthor: Erica Seifert, MS CF-SLP
 navType: blog
 ---
 
