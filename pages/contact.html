@@ -4,6 +4,16 @@ title: Contact
 permalink: /contact/
 ---
 
+
+<div class="row hidden" id="confirmMessage">
+  <div class="col-xs-12 col-md-12">
+    <div class="alert alert-success">
+      <strong>Thank you for your interest.</strong> Lakeview Speech will contact you shortly!
+    </div>
+  </div>
+</div>
+
+
 <div class="row">
   <div class="col-xs-12 col-md-7">
     <div class="bs-callout bs-callout-green">
@@ -25,7 +35,7 @@ permalink: /contact/
         <div class="form-group">
           <textarea placeholder="Message" name="message" class="form-control ember-view ember-text-area"></textarea>
         </div>
-        <input type="hidden" name="_next" value="http://localhost:4000/contact?message=true" />
+        <input type="hidden" name="_next" value="http://trumb1mj.github.io/lslc-website/contact?message=true" />
         <input type="hidden" name="_subject" value="New client inquiry!" />
         <ul class="list-inline">
           <li class="pull-right">
@@ -80,9 +90,8 @@ permalink: /contact/
       <div id="map" class="ember-view g-map" style="height: 400px;"></div>
       <script>
         function initMap() {
-
           if (window.location.search.indexOf("message") !== -1){
-            alert("Thank you for your interest. Lakeview Speech will contact you shortly!");
+            $('#confirmMessage').removeClass("hidden");
           }
 
           var map = new google.maps.Map(document.getElementById('map'), {
