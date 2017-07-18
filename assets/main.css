@@ -6425,6 +6425,12 @@ button.close {
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
 }
+
+.carousel-inner > .item > img {
+  width:100%;
+  min-height: 400px;
+}
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   line-height: 1;
