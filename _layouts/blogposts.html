@@ -28,7 +28,7 @@ layout: default
       <ul class="list-unstyled">
         {% for olderPost in site.posts limit:10 offset:1 %}
         <li>
-          <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
+          <!-- <span class="post-meta">{{ olderPost.date | date: "%b %-d, %Y" }}</span> -->
           <a class="post-link" href="{{ olderPost.url | relative_url }}"><h5><span class="" style="font-style: italic; font-size: 14px; color: gray;">{{ post.date | date: date_format }}</span> {{ olderPost.title | escape }}</h5></a>
         </li>
         {% endfor %}
