@@ -47,7 +47,6 @@ Summarizing and paraphrasing are important skills for school-age children who tr
 - One way to practice these skills is to read a short passage with your child (preferably with a picture that goes with it) and then take turns &quot;saying it a different way.&quot;
 - Use the &quot;four R&#39;s&quot; to help your child paraphrase:
 
--
   - **Reword**  – Use synonyms whenever you can.
   - **Rearrange**  – Make new sentences by rearranging words, or make new paragraphs by rearranging ideas.
   - **Realize**  that some things cannot be changed – specific things like names and dates cannot be replaced, but you can present them in a different way.
